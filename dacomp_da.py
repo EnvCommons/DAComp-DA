@@ -125,7 +125,7 @@ class DACompDA(Environment):
             bucket_config=SandboxBucketConfig(
                 mount_path="/data",
                 read_only=True,
-                only_dir=f"{self.instance_id}",
+                only_dir=f"sandbox_data/{self.instance_id}",
             ),
         )
 
